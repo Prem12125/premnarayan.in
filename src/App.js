@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Head from './components/Head';
+import About from './components/About';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Project from './components/Project' ;
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar About="About" Experience="Experience" Education="Education" Projects="Projects" Skills="Skills" Contact="Contacts"  />
+    <Head/>
+    <About/>
+    <Experience/>
+    <Education/>
+    <Project  name=" Cricket Fantasy Game(Python)" name1="Microstrip Patch Antenna (ANSSY HFSS-15.0.1) " />
+    <Skills/>
+    <Contact/>
+    <Footer/>
+    </>
   );
 }
 
